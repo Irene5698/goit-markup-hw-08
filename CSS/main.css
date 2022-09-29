@@ -626,6 +626,12 @@ button:hover, button:focus {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .title {
+    text-align: center;
+  }
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
