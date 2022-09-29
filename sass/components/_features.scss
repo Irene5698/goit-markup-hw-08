@@ -13,27 +13,33 @@
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: var(--grey-background-color);
+
+    @media screen and (max-width: 480px) {
+      width: 450px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
   }
   
   .feature__list {
     display: flex;
 
-    @media screen and (max-width: 480px) {
-      display: contents;
-      flex-wrap: wrap;
+    @media screen and (min-width: 480px) {
+      display: inline-block;
     }
-
   }
   
   .feature__list .feature__item + .feature__item {
     margin-left: 30px;
 
+    @media screen and (min-width: 480px) {
+      margin-left: 0;
+    }
+
   }
 
-    @media screen and (min-width: 768px) {
-      .feature__item {
-        width: 50%;
-      }
   
-    }
   
+    

@@ -48,24 +48,25 @@ address {
 .section {
   padding: 94px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .section {
-    padding: 100px 0;
+    padding: 60px 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .section {
     padding: 60px 0;
   }
 }
 
 .container {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  width: 1200px;
+  outline: 2px solid red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     max-width: 480px;
   }
@@ -219,11 +220,6 @@ body {
 .header .header__mail {
   color: var(--secondary-text-color);
 }
-@media screen and (max-width: 480px) {
-  .header {
-    display: contents;
-  }
-}
 
 .studio-line {
   position: relative;
@@ -268,6 +264,18 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Background\(1\).jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Background\(1\).jpg);
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    max-height: 400px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-height: 400px;
+    max-width: 768px;
+  }
+}
 .hero__title {
   width: 696px;
   margin: 0 auto;
@@ -278,6 +286,20 @@ body {
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.6153846154;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.6153846154;
+  }
 }
 
 button {
@@ -573,29 +595,37 @@ button:hover, button:focus {
   margin-bottom: 30px;
   background-color: var(--grey-background-color);
 }
+@media screen and (max-width: 480px) {
+  .feature__svg {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__svg {
+    width: 354px;
+  }
+}
 
 .feature__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .feature__list {
-    display: contents;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: inline-block;
   }
 }
 
 .feature__list .feature__item + .feature__item {
   margin-left: 30px;
 }
-
-@media screen and (min-width: 768px) {
-  .feature__item {
-    width: 50%;
+@media screen and (min-width: 480px) {
+  .feature__list .feature__item + .feature__item {
+    margin-left: 0;
   }
 }
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
