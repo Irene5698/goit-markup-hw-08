@@ -1,0 +1,15 @@
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--black-text-color);
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+
+    & &__ingredient {
+        color: #2196f3;
+      }
+  }
+ 

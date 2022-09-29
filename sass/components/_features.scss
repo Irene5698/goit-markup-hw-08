@@ -1,0 +1,39 @@
+
+.section .feature__text {
+    line-height: calc(24 / 14);
+    color: var(--grey-text-color);
+  }
+  
+  .feature__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--grey-background-color);
+  }
+  
+  .feature__list {
+    display: flex;
+
+    @media screen and (max-width: 480px) {
+      display: contents;
+      flex-wrap: wrap;
+    }
+
+  }
+  
+  .feature__list .feature__item + .feature__item {
+    margin-left: 30px;
+
+  }
+
+    @media screen and (min-width: 768px) {
+      .feature__item {
+        width: 50%;
+      }
+  
+    }
+  
