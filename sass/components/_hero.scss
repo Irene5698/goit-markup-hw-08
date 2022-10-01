@@ -53,7 +53,19 @@
 
 // Desktop images
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+
+    background-image: url(../images/Header\ img_sm-@1x.png);
+
+   @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+ background-image: url(../images/Header\ img_sm-@2x.png);
+}
+
+}
+
+@media screen and (max-width: 768px) {
 
     background-image: url(../images/Header\ img_sm-@1x.png);
 
@@ -113,6 +125,10 @@
          @media screen and (min-width: 768px) {
              width: 360px;
          }
+
+         @media screen and (max-width: 768px) {
+            width: 360px;
+        }
 
          @media screen and (min-width: 480px) {
             width: 360px;
