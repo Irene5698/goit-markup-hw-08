@@ -551,10 +551,20 @@ body {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url(../images/Header\ img_lg-@1x.png);
+    background-image: url(../images/Header\ img_sm-@1x.png);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/Header\ img_sm-@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/Header\ img_lg-@1x.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../../images/Header\ img_lg-@2x.png);
   }
