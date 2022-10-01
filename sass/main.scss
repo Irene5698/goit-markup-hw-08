@@ -1,5 +1,6 @@
 /* Utiles styles*/
 @import "./utils/vars";
+@import "./utils/normalize";
 @import "./utils/reset";
 @import "./utils/visially-hidden";
 /* component style files*/
@@ -19,3 +20,5 @@
 @import "./components/footer";
 @import "./components/footer-form";
 @import "./components/portfolio";
+@import "./components/menu-button";
+

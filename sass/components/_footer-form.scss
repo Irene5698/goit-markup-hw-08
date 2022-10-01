@@ -1,11 +1,13 @@
 .footer__form-button {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     gap: 12px;
   }
   
   .footer__button-submit {
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     gap: 10px;
     justify-content: center;

@@ -30,9 +30,20 @@
           <a href="./index.html" class="logo"
             ><span class="logo__ingredient">Web</span>Studio</a
           >
+<!--
+          <button type="button" class="menu-button js-open-menu" aria-expandend="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/icons.svg.svg#icon-menu-btnpx"></use>
+              <use class="icon-close" href="./images/icons.svg.svg#icon-close-btnpx"></use>
+            </svg>
+          </button>
+-->
           <ul class="header__site-nav">
             <li class="header__item studio-line">
               <a href="./index.html" class="header__link current">Студія</a>
+
+
+
             </li>
             <li class="header__item">
               <a href="./Portfolio.html" class="header__link">Портфоліо</a>
@@ -54,20 +65,25 @@
             >
           </li>
         </ul>
+
+
       </div>
     </header>
 
 
     <!--Hero-->
-  
+
     <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу
           </div>
+        
+
     
                 <!--Modal window-->
+    <!---
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button type="button" class="modal__button" data-modal-close>
@@ -114,11 +130,17 @@
           </div>
         </div>
       </section>
+    
       <!--Features-->
+  
+    <!--
       <section class="section feature">
         <div class="container">
           <h2 class="visually-hidden">наші переваги</h2>
+          -->
           <!--hide with css-->
+
+          <!--
           <ul class="feature__list">
             <li class="feature__item">
               <div class="feature__svg">
@@ -170,7 +192,9 @@
           </ul>
         </div>
       </section>
+-->
 
+<!--
       <section class="section container-top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
@@ -215,9 +239,9 @@
       <section class="section team__our">
         <div class="container">
           <h2 class="section-title-team">Наша команда</h2>
-
+-->
           <!--Team-->
-
+<!--
           <ul class="team">
             <li class="team__item">
               <img
@@ -470,7 +494,8 @@
           </ul>
         </div>
       </section>
-
+-->
+<!--
       <section class="section clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
@@ -521,8 +546,9 @@
         </div>
       </section>
     </main>
-
+-->
     <!--Футер-->
+  <!--
     <footer class="footer">
       <div class="container">
         <div class="footer__contact">
@@ -619,6 +645,17 @@
       </div>
       </div>
     </footer>
+-->
+
+<!--Mobile menu-->
+
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
 
     <script src="./js/model.js"></script>
   </body>
