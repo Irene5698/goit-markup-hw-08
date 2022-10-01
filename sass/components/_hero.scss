@@ -25,9 +25,9 @@
   }
 
   // Tablet images
-  @media screen and (min-width: 480px;) {
+  @media screen and (min-width: 480px) {
 
-       url(../images/Header\ img_md-@1x.png);
+    background-image: url(../images/Header\ img_md-@1x.png);
 
       @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -39,9 +39,9 @@
 
 // Desktop images
 
-@media screen and (min-width: 769px;) {
+@media screen and (min-width: 769px) {
 
-    url(../images/Header\ img_lg-@1x.png);
+    background-image: url(../images/Header\ img_lg-@1x.png);
 
    @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -51,7 +51,7 @@
 
 }
 
-      @media screen and (min-width: 320px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin: 0 auto;
     padding: 118px 0;
     height: 400px;
@@ -86,6 +86,10 @@
          @media screen and (min-width: 768px) {
              width: 360px;
          }
+
+         @media screen and (min-width: 480px) {
+            width: 360px;
+        }
 
          @media screen and (min-width: 1200px) {
     line-height: 1.4;
