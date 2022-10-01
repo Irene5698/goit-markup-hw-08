@@ -14,36 +14,20 @@
     margin-bottom: 30px;
     background-color: var(--grey-background-color);
 
-    @media screen and (max-width: 480px) {
-      width: 450px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
   }
   
   .feature__list {
     display: flex;
+  
+}
 
-    @media screen and (min-width: 480px) {
-      display: inline-block;
-    }
-  }
+
   
   .feature__list .feature__item + .feature__item {
     margin-left: 30px;
 
-    @media screen and (min-width: 480px) {
-      margin-left: 0;
-    }
-
   }
 
-  .title {
-    @media screen and (min-width: 480px){
-      text-align: center;
-    }
-  }
+
   
     
