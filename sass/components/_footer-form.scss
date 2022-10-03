@@ -1,8 +1,19 @@
+
 .footer__form-button {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     gap: 12px;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: contents;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    display: inline-block;
+  }
   }
   
   .footer__button-submit {
@@ -19,6 +30,19 @@
   
   .footer__container-form {
     margin-left: auto;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 60px;
+      text-align: center;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   .footer__form-input {
@@ -31,4 +55,19 @@
     padding-left: 16px;
     box-sizing: border-box;
     color: var(--accent-background-color);
-  }
+
+    
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+}
+}
+  
+  

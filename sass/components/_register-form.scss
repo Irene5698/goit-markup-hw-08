@@ -13,6 +13,10 @@
         letter-spacing: 0.03em;
         color: var(--main-text-color);
         margin-bottom: 12px;
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            line-height: 1.5;
+        }
       }
       
       &__group {
