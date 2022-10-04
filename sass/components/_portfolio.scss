@@ -24,6 +24,18 @@
   .portfolio__section  .list {
     margin-bottom: 50px;
     gap: 8px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+
+      flex-wrap: wrap;
+      row-gap: 15px;
+      margin-bottom: 30px;}
+      justify-content: left;
+    
+      @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    justify-content: center;
+}
   }
   
   .portfolio__overlay {
@@ -63,6 +75,18 @@
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-text-color);
+
+    @media screen and (min-width: 767px) and (max-width: 1199px){
+    letter-spacing: .04em; 
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    letter-spacing: .06em;
+}
+
+@media screen and (min-width: 1200px) {
+    letter-spacing: .06em;
+}
   }
   .portfolio__section .text {
     font-weight: 400;
@@ -75,6 +99,17 @@
   .portfolio__list-images {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  margin: -15px;
+}
   }
   
   .portfolio__link-images {
@@ -111,5 +146,19 @@
         margin-bottom: 0;
       }
       
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+          width: calc((100% - 60px)/2);
+          margin: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px)/3);
+    margin: 15px;
+}
+
   }
   
