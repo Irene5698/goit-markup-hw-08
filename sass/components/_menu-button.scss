@@ -61,11 +61,6 @@ display: block;
 }
 }
 
-.mobile__menu-list:hover,
-.mobile__menu-list:focus {
-    color: #2196F3;
-}
-
 .menu-container {
     @media screen and (max-width: 767px) {
     padding: 48px 40px;
@@ -133,20 +128,19 @@ color: #757575;
 
 }
 
-.menu-toggle:hover, 
-.menu-togle:focus {
+.menu__svg:hover, 
+.menu__svg:focus {
     @media screen and (max-width: 767px) {
         fill: var(--accent-color);
     }
 }
 
 
-.menu-svg:hover,
-.menu-svg:focus {
-    @media screen and (max-width: 767px) {
-    fill: var(--accent-color);
+.mobile__item:hover, 
+.mobile__item:hover {
+color: #2196F3;
 }
-}
+
 
 
 .mobile-socials {

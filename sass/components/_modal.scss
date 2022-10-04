@@ -1,6 +1,5 @@
 .modal {
-    width: 528px;
-    height: 581px;
+   
     background-color: var(--accent-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -14,6 +13,7 @@
     @media screen and (min-width: 480px) and (max-width: 1199px) {
         min-width: 450px;
     }
+
 
     &__button {
         position: absolute;
@@ -43,4 +43,9 @@
       }
   }
   
- 
+ .register-form__desc {
+  @media screen and (min-width: 480px) and (max-width: 1199px){
+      font-size: 12px;
+      line-height: 1.16;
+  }
+ }
