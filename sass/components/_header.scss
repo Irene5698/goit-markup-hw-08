@@ -45,7 +45,6 @@
     }
   
     .header__auth-nav {
-      display: flex;
       margin-left: auto;
       align-items: center;
       text-align: center;
@@ -62,10 +61,7 @@
       }
     }
     
-    .header__auth-nav .header__item + .header__item {
-      margin-left: 50px;
-      }
-    
+
       .header__svg-header {
         text-align: center;
         align-items: center;
@@ -105,7 +101,7 @@
       
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
       }
@@ -120,10 +116,9 @@
   color: var(--secondary-text-color);
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
 }
-
 }
 
 .studio-line {

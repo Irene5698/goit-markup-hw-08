@@ -451,9 +451,6 @@ body {
 }
 
 .header__auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -476,10 +473,6 @@ body {
             flex-direction: column-reverse;
     margin-left: auto;
   }
-}
-
-.header__auth-nav .header__item + .header__item {
-  margin-left: 50px;
 }
 
 .header__svg-header {
@@ -527,7 +520,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__item .header__tel {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -541,7 +534,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header .header__mail {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
   }
 }
