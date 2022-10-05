@@ -1881,13 +1881,12 @@ footer {
 @media screen and (min-width: 768px) {
   .menu-container {
     display: none;
-    overflow-y: scroll;
   }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     padding: 48px 40px;
-    overflow-y: scroll;
+    overflow-x: scroll;
     position: fixed;
     top: 0;
     left: 0;
@@ -1933,6 +1932,14 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .menu-button:hover,
+.menu-button:focus {
+    fill: var(--accent-color);
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .menu__link {
     font-weight: 500;
     font-size: 40px;
@@ -1963,7 +1970,7 @@ footer {
     line-height: 1.3333333333;
     letter-spacing: 0.02em;
     font-family: inherit;
-    color: #2196F3;
+    color: #2196f3;
   }
 }
 
@@ -2005,7 +2012,7 @@ footer {
 
 .mobile__item:hover,
 .mobile__item:focus {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -2014,7 +2021,7 @@ footer {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: #2196f3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2026,5 +2033,18 @@ footer {
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .current {
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__btn:hover,
+.menu__btn:focus {
+    fill: #2196f3;
   }
 }/*# sourceMappingURL=main.css.map */

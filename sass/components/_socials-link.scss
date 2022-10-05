@@ -1,33 +1,31 @@
 .socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    
-    &__link {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        background-color: var(--accent-background-color);
-        color: var(--icon-color);
-        border-radius: 50%;
-        transition-property: color, background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      &__icon {
-        fill: currentColor;
-      }
-      
-      &__link:hover,
-      &__link:focus {
-        color: var(--accent-background-color);
-        background-color: var(--button-active);
-      }
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-background-color);
+    color: var(--icon-color);
+    border-radius: 50%;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
- 
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-background-color);
+    background-color: var(--button-active);
+  }
+}

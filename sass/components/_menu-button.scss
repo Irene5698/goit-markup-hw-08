@@ -1,55 +1,48 @@
 .menu-button {
-
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
-}
+  }
 
-    display: flex;
-    flex-wrap: wrap;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
 
 .menu-button:hover,
 .menu-button:focus {
-@media screen and (max-width: 767px) {
-   fill: var(--accent-color);
-    }
+  @media screen and (max-width: 767px) {
+    fill: var(--accent-color);
+  }
 }
 
-
-  
 .menu-button .icon-close {
-    display: none;
-    }
+  display: none;
+}
 
 .menu-button .js-open-menu .icon-close {
-display: block;
+  display: block;
 }
 
 .menu-button .js-open-menu .icon-menu {
-    display: none;
+  display: none;
 }
 
-
 .menu-container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-        overflow-y: scroll;
-    }
-
-    @media screen and (max-width: 767px) {
-        padding: 48px 40px;
-        overflow-y: scroll;
-        position: fixed;
+  @media screen and (max-width: 767px) {
+    padding: 48px 40px;
+    overflow-x: scroll;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -60,73 +53,75 @@ display: block;
     flex-direction: column;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
+  }
 }
 
-.menu-container.is-open  {
-    @media screen and (max-width: 767px) {
-    transform: translateX(0);}
+.menu-container.is-open {
+  @media screen and (max-width: 767px) {
+    transform: translateX(0);
+  }
 }
-
 
 .mobile__menu-list {
-    
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 32px;
     margin-bottom: auto;
+  }
 }
+
+.menu-button:hover,
+.menu-button:focus {
+  @media screen and (max-width: 767px) {
+    fill: var(--accent-color);
+    color: #2196f3;
+  }
 }
-
-
-
 
 .menu__link {
-@media screen and (max-width: 767px) {
-font-weight: 500;
-font-size: 40px;
-line-height: calc(47 / 40);
-letter-spacing: 0.02em;
-color: #212121;
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
 }
-}
-
 
 .mobile__contact {
-    @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 32px;
     margin-bottom: 64px;
-}
+  }
 }
 
 .mobile__tel {
-@media screen and (max-width: 767px) {
-font-weight: 500;
-font-size: 34px;
-line-height: calc(40 / 30);
-letter-spacing: 0.02em;
-font-family: inherit;
-color: #2196F3;
-}
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 30);
+    letter-spacing: 0.02em;
+    font-family: inherit;
+    color: #2196f3;
+  }
 }
 
 .mobile__mail {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     font-weight: 500;
-font-size: 24px;
-line-height: calc(28 / 24);
-letter-spacing: 0.02em;
-font-family: inherit;
-color: #757575;
-    }
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    font-family: inherit;
+    color: #757575;
+  }
 }
 
 .menu-toggle {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -134,46 +129,53 @@ color: #757575;
     border: 0;
     margin: 0;
     padding: 0;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+  }
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-@media screen and (max-width: 767px) {
-   fill: var(--accent-color);
-    }
+  @media screen and (max-width: 767px) {
+    fill: var(--accent-color);
+  }
 }
 
-
-.mobile__item:hover, 
+.mobile__item:hover,
 .mobile__item:focus {
-color: #2196F3;
+  color: #2196f3;
 }
-
-
 
 .mobile-socials {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
 
-color: #2196F3;
-        display: flex;
-    }
-
-
+    color: #2196f3;
+    display: flex;
+  }
 }
 
 .mobile-socials-link {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-right: 10px;
     padding-right: 10px;
-    border-right: 1px solid rgba(33,33,33,.2);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
+
+.current {
+  @media screen and (max-width: 767px) {
+    color: #2196f3;
+  }
+}
+
+.menu__btn:hover,
+.menu__btn:focus {
+  @media screen and (max-width: 767px) {
+    fill: #2196f3;
+  }
 }

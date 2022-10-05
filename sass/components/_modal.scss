@@ -1,51 +1,49 @@
 .modal {
-   
-    background-color: var(--accent-background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  background-color: var(--accent-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    min-width: 450px;
+  }
+
+  &__button {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
-    
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-        min-width: 450px;
-    }
-
-
-    &__button {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 6px 6px;
-        background-color: var(--accent-background-color);
-      }
-      
-      &__button:hover,
-      &__button:focus {
-        background-color: var(--accent-background-color);
-      }
-      
-      &__button-close {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      &__button-close:hover,
-      &__button-close:focus {
-        fill: var(--accent-text-color);
-      }
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 6px;
+    background-color: var(--accent-background-color);
   }
-  
- .register-form__desc {
-  @media screen and (min-width: 480px) and (max-width: 1199px){
-      font-size: 12px;
-      line-height: 1.16;
+
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--accent-background-color);
   }
- }
+
+  &__button-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button-close:hover,
+  &__button-close:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.register-form__desc {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
