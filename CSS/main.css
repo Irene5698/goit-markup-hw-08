@@ -1881,6 +1881,7 @@ footer {
 @media screen and (min-width: 768px) {
   .menu-container {
     display: none;
+    overflow-x: scroll;
   }
 }
 @media screen and (max-width: 767px) {
