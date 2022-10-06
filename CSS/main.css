@@ -1794,9 +1794,6 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio__list-item-images:nth-child(3n) {
-  margin-right: 0;
-}
 @media screen and (max-width: 480px) {
   .portfolio__list-item-images:nth-child(3n) {
     margin-bottom: 30px;
