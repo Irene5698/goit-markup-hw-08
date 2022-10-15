@@ -8,8 +8,14 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
 
+    @media screen and (max-width: 480px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+
     & &__ingredient {
         color: #2196f3;
       }
   }
  
+
